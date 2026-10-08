@@ -13,6 +13,15 @@
 [![Vite](https://img.shields.io/badge/Vite-8-646CFF?style=flat&logo=vite)](https://vite.dev/)
 [![Framer Motion](https://img.shields.io/badge/Framer_Motion-12-0055FF?style=flat)](https://motion.dev/)
 
+## Screenshots
+
+<p align="center">
+  <img src="./screenshot-ui.png" alt="3dHouse UI" width="100%" />
+  <br />
+  <em>3D restaurant showcase site.</em>
+</p>
+
+
 ## What it is
 
 A marketing website for a 3D house visualization company — "turn your property into experiences people never forget". Single-page site with animated hero, project showcase, client testimonials, why-choose-us, and contact sections. Built for a real-estate/arch-viz business to present its portfolio.
