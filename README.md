@@ -1,17 +1,72 @@
-# React + Vite
+# 3D House
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> ## Status: 🟢 Completed
+>
+> <progress value="90" max="100"></progress>
+> **Progress: 90%** — Marketing site complete, builds cleanly, all sections present
 
-Currently, two official plugins are available:
+<p align="center">
+  <img src="banner.webp" alt="3D House banner" width="100%" />
+</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+[![React](https://img.shields.io/badge/React-19-61DAFB?style=flat&logo=react)](https://react.dev/)
+[![Vite](https://img.shields.io/badge/Vite-8-646CFF?style=flat&logo=vite)](https://vite.dev/)
+[![Framer Motion](https://img.shields.io/badge/Framer_Motion-12-0055FF?style=flat)](https://motion.dev/)
 
-## React Compiler
+## What it is
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+A marketing website for a 3D house visualization company — "turn your property into experiences people never forget". Single-page site with animated hero, project showcase, client testimonials, why-choose-us, and contact sections. Built for a real-estate/arch-viz business to present its portfolio.
 
-## Expanding the ESLint configuration
+## What works (verified)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# 3dHouse
+- ✅ Project builds cleanly — `npm run build` succeeds (verified)
+- ✅ All five sections render: Hero, Projects, Clients, WhyChooseUs, Contact (verified by reading `App.jsx`)
+- ✅ Framer Motion scroll/entrance animations on hero and sections (verified by code read)
+- ✅ Responsive layout with dedicated CSS (verified by code read)
+
+## Tech stack
+
+| Layer | Tech |
+|---|---|
+| Framework | React 19 + Vite 8 |
+| Animation | Framer Motion 12 |
+| Icons | lucide-react, react-icons |
+| Styling | Plain CSS (`App.css`, `index.css`) |
+
+## How to run
+
+```bash
+npm install
+npm run dev      # dev server → http://localhost:5173
+npm run build    # production build → dist/
+```
+
+## Screenshots
+
+![Website screenshot](Website.png)
+
+## What you can add more
+
+- [ ] Contact form backend — the Contact section currently has no form submission wired up
+- [ ] Real project gallery images instead of placeholders
+- [ ] SEO meta tags and Open Graph images (currently minimal)
+- [ ] Mobile nav menu — check the navbar collapses cleanly on small screens
+- [ ] Page speed pass — the JS bundle is ~326 KB; code-split framer-motion if needed
+
+## Project structure
+
+```
+src/
+├── App.jsx               # Renders all five sections
+├── main.jsx              # Entry point
+├── components/
+│   ├── Hero.jsx          # Animated hero with curved cutout
+│   ├── Projects.jsx      # Project showcase
+│   ├── Clients.jsx       # Client testimonials
+│   ├── WhyChooseUs.jsx   # Value props
+│   └── Contact.jsx       # Contact section
+├── App.css / index.css   # Styling
+```
+
+---
+*README written after code audit on 2026-10-08.*
